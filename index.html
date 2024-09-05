@@ -6,19 +6,23 @@
     <title>Typing Effect with Typed.js</title>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <style>
+        /* Ensure the body and html have no background */
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
             overflow: hidden;
-            background: transparent; /* Ensure entire background is transparent */
+            background: transparent; /* Make background transparent */
         }
+        /* Apply custom styling to the typed-text */
         #typed-text {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
+            font-family: 'Wix Made for Display Bold', sans-serif; /* Use the custom font */
+            font-size: 60px; /* Set font size */
+            font-weight: bold; /* Make the text bold */
+            color: white; /* Set text color to white */
             text-align: center; /* Center align text */
-            background: transparent; /* Ensure text container background is transparent */
+            background: transparent; /* Ensure text div is transparent */
+            mix-blend-mode: difference; /* Apply the difference blend mode */
         }
     </style>
 </head>
