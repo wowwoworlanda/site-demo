@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Effect with Typed.js</title>
-    <!-- Link to the Typed.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        /* Ensure the body and html have no background */
+        html, body {
             margin: 0;
-            background-color: #f4f4f4;
+            padding: 0;
+            height: 100%;
+            background: transparent; /* Make background transparent */
         }
         #typed-text {
             font-size: 24px;
             font-weight: bold;
             color: #333;
+            text-align: center; /* Center align text */
         }
     </style>
 </head>
@@ -27,7 +25,6 @@
     <div id="typed-text"></div>
 
     <script>
-        // Typed.js initialization
         var options = {
             strings: ["Welcome to my website!", "Enjoy the typing animation.", "Feel free to explore!"],
             typeSpeed: 50,
