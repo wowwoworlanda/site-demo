@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect with Typed.js</title>
+    <!-- Link to the Typed.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        #typed-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="typed-text"></div>
+
+    <script>
+        // Typed.js initialization
+        var options = {
+            strings: ["Welcome to my website!", "Enjoy the typing animation.", "Feel free to explore!"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        };
+
+        var typed = new Typed('#typed-text', options);
+    </script>
+</body>
+</html>
